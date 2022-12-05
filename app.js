@@ -69,3 +69,34 @@ function RESET() {
     plBtn2.disabled = false;
     plBtn1.disabled = false;
 }
+
+
+
+const delayColorChange = (color, delay) => {
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay)
+
+    })
+
+}
+
+
+
+
+
+
+delayColorChange('red', 1000)
+    .then(() => delayColorChange('blue', 1000))
+    .then(() => delayColorChange('brown', 1000))
+    .then(() => delayColorChange('yellow', 1000))
+    .then(() => delayColorChange('green', 1000))
+    .then(() => delayColorChange('white', 1000))
+    .then(() => delayColorChange('blue', 1000))
+    .then(() => delayColorChange('brown', 1000))
+    .then(() => delayColorChange('yellow', 1000))
+    .then(() => delayColorChange('green', 1000))
+    .then(() => delayColorChange('white', 1000))
