@@ -8,6 +8,7 @@
 }
 
 body {
-    transition: backgroundcolor, 1s;
+    background-color: black;
+    transition: backgroundcolor, 4s;
     opacity: 1;
 }
